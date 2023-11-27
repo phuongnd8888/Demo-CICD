@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 script {
-                    git 'https://github.com/yourusername/node-hello-world.git'
+                    echo 'Building the application...'
                 }
             }
         }
