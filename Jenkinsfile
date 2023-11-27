@@ -2,11 +2,13 @@ pipeline {
     agent any
 
     stages {
-        // stage('Checkout') {
-        //     steps {
-        //         checkout scm
-        //     }
-        // }
+        stage('Checkout') {
+            steps {
+                script {
+                    git branch: 'main', url: 'https://github.com/phuongnd8888/democicd.git'
+                }
+            }
+        }
 
         stage('Build and Package') {
             steps {
