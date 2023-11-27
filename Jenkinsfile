@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/phuongnd8888/Demo-CICD.git'
+                script {
+                    git 'https://github.com/yourusername/node-hello-world.git'
+                }
             }
         }
     }
