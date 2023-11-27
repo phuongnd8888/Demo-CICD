@@ -2,13 +2,11 @@ pipeline {
     agent any
 
     stages {
-//        stage('Checkout') {
-//            steps {
-//                script {
-//                    git 'https://github.com/phuongnd8888/Demo-CICD.git'
-//                }
-//            }
-//        }
+        stage('Clone') {
+            steps {
+                git 'https://github.com/phuongnd8888/Demo-CICD.git'  
+            }
+        }
 
         stage('Build and Package') {
             steps {
