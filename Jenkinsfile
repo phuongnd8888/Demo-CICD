@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 script {
-                    echo 'Building the application...'
+                    git 'https://github.com/phuongnd8888/Demo-CICD.git'
                 }
             }
         }
